@@ -1,0 +1,183 @@
+/* contenedor general */
+
+
+
+
+
+.publicaciones{
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+     justify-content: center;   /* centra horizontal */
+    align-items: center;  
+}
+
+/* titulo */
+
+
+/* tarjeta */
+.post{
+background-image: url('../object/image/white-brown-flowers.png');  
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.postBlog{
+    display:flex;
+    gap:70px;
+    align-items:flex-start;
+
+    background-image: url('../object/image/white-flowers.png');  
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.30);
+}
+.titulosPart{
+     position: relative;
+    z-index: 2;             /* lo pone encima del fondo */
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+/* titulo post */
+.post-titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(115, 92, 62);
+    text-shadow: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+/* imagen */
+.post img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+.post-texto{
+    text-align: center;
+    font-size: 18px;
+    z-index: 3;
+}
+
+
+.video{
+  
+
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+
+.video iframe{
+    width:80%;
+    max-width:700px;
+    height:400px;
+    border-radius:12px;
+}
+
+
+.contenido{
+    position:relative;
+    min-height:600px;
+}
+
+.bloque{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .35s ease;
+}
+
+.bloque.activo{
+    position:relative;
+    opacity:1;
+    pointer-events:auto;
+}
+
+
+
+.imgProductos{
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.galeria{
+   display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.imgProductos{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.25s;
+    cursor:pointer;
+    display:block;
+}
+
+.imgProductos:hover{
+    transform:scale(1.05);
+}
+
+#imagen{
+    max-width:550px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.20);
+}
+
+.postPrincipal_Producto{
+       width:100%;
+    border-radius:40px;
+    max-width: 500px;
+    display: block;
+    margin: 100px auto;
+}img{
+    max-width:100%;
+    height:auto;
+}
+@media (max-width:900px){
+
+    .postBlog{
+        position: relative;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .postBlogimg{
+        width:100%;
+        min-width:unset;
+        
+    }
+
+    .about-texto{
+        padding:10px;
+    }
+}

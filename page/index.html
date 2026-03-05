@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/posts.css">
+<link rel="stylesheet" href="css/cuadrado.css">
+
+<title>pagina</title>
+</head>
+<script>anteriorFondo()</script>
+<body class="pagina" style="background-image: url('object/image/background flowers.png'); margin:0; padding:0;">
+<!-- HEADER -->
+<section class="recorte" >
+
+    <a href="index.html" class="imagen">
+        <img  src="object/image/logo_prototype.png" width="150" height="100" style="margin-left:20px; cursor:pointer;">
+    </a>      
+    
+
+</section>
+
+<!-- FOTO PRESENTACION -->
+<div class="contenedor" >
+
+    <h1 class="titulosPart" style="color:white; font-size:24px; text-shadow:2px 2px 4px rgba(0,0,0,0.7);">
+   Bienvenido</h1>
+
+    <h2 class="titulosPart" style=" font-size:36px; text-align:center; margin:0; color:white;text-shadow:2px 2px 4px rgb(109, 55, 0);">
+   Este es mi Blog
+    </h2>
+<div id="caja">
+
+<section id="arriba" class="seccion" style="margin-top: 20%;">
+    <div class="flechas">
+        <button  class="boton" onclick="anteriorFondo()">←</button>
+
+         <button  class="boton" onclick="cambiarFondo()">→</button>
+
+    </div>
+
+                </section>
+</div>
+
+
+<!-- BOTONES -->
+<div class="button OptionBox" >
+<a class="botonEleccion"  onclick="mostrar(1)">inicio </a>
+<a class="botonEleccion"  onclick="mostrar(2)">sobre mi </a>
+<a class="botonEleccion"  onclick="mostrar(3)">Trabajos </a>
+<a class="botonEleccion"  onclick="mostrar(4)">Tutoriales </a>
+
+
+
+</div>
+
+<!-- CONTENIDO (TODO JUNTO) -->
+<div class="contenido">
+
+    <!-- INICIO -->
+    <article id="b1" class="bloque activo">
+
+        <h1 class="post-titulo">
+            Ultimas Publicaciones
+        </h1>
+
+        <div class="post">
+            <h2 class="post-titulo">Lisa</h2>
+            <a href="obras.html?id=1" >
+            <img src="object/image/lisa.jpg" alt="foto">
+            <div class="imagenObra" ></div>
+
+            </a>
+            <p class="post-texto">perro tonto</p>
+        </div>
+
+        <div class="post">
+            <h2 class="post-titulo">montaña</h2>
+            <a href="obras.html?id=2">
+            <img src="object/image/mountain2.jpg" alt="foto">
+            </a>
+            <p class="post-texto">
+                una montaña sacada de
+                <a href="https://www.instagram.com/p/C6pXMFPRmsV/" target="_blank">instagram</a>
+            </p>
+        </div>
+
+        <div class="post video">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/ASNvX2miQpXQfdLh"
+                title="video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </article>
+
+    <!-- SOBRE MI -->
+    <article id="b2" class="bloque">
+
+
+        
+        <h1 class="post-titulo"   >
+            Sobre mi
+        </h1>
+
+        
+        <div class="postBlog">
+
+    <img class="postBlogimg" src="object/image/lisa.jpg" >
+      <p  class="about-texto">albion online es un mmorpg no lineal en el que escribes tu propia historia sin limitarte a seguir un camino prefijado, explora un amplio mundo abierto con cinco biomas unicos, todo cuanto hagas tendra su repercusíon en el mundo, con su economia orientada al jugador de albion los jugadores crean practicamente todo el equipo a partir de los recursos que consiguen, el equipo que llevas define quien eres, cambia de arma y armadura para pasar de caballero a mago o juego como una mezcla de ambas clases, aventurate en el mundo abierto y haz frente a los habitantes y las criaturas de albion, inicia expediciones o adentrate en mazmorras en las que encontraras enemigos aun mas dificiles, enfrentate a otros jugadores en encuentros en el mundo abierto, lucha por los territorios o por ciudades enteras en batallas tacticas, relajate en tu isla privada donde podras construir un hogar, cultivar cosechas, criar animales, unete a un gremio, todo es mejor cuando se trabaja en grupo [musica] adentrate ya en el mundo de albion y escribe tu propia historia.</p>
+       
+
+        </div>
+
+    </article>
+
+    <!-- CUADROS -->
+    <article id="b3" class="bloque">
+     
+        <h1 class="titulo-seccion" style="color:black; text-align:center; margin:100px;">
+        Cuadros
+    </h1>
+
+    <div class="galeria">
+
+        <div class="obra">
+            <h1 id="titulo"></h1>
+
+            <a href="obras.html?id=1" >
+            <img class="imgProductos" src="object/image/lisa.jpg">
+            </a>
+        </div>
+
+        <div class="obra">
+            <a href="obras.html?id=2">
+            <img class="imgProductos" src="object/image/mountain2.jpg">
+            </a>
+        </div>
+
+        <div class="obra">
+            <a href="obras.html?id=3" target="_blank">
+            <img class="imgProductos" src="object/image/hill.jpg">
+               </a>
+        </div>
+
+        <div class="obra">
+            <a href="obras.html?id=4" target="_blank">
+
+            <img class="imgProductos" src="object/image/lisa.jpg">
+               </a>
+        </div>
+
+    </div>
+        
+    </article>
+
+</div>
+
+<!-- FOOTER -->
+<article class="recorteDown">
+     <section id="abajo" class="seccion"style="position: absolute; left: 50%">
+
+ <a href="#arriba"  >
+        <button class="boton">Subir ↑</button>
+    </a>
+    </section>
+
+ <p style="position: absolute; left: 10px;">&copy; 2026 Mi Blog. Todos los derechos reservados. Tg!</p>
+    <a href="https://www.instagram.com/salvianisandra/" target="_blank">
+        <img src="object/image/intagram.png" style="width: 100px; height: 100px;">
+    </a>
+     <a href="https://www.instagram.com/salvianisandra/" target="_blank">
+        <img src="object/image/whasapp_icon.png" style="color: black; width: 90px; height: 90px;">
+    </a>
+ 
+    
+</article>
+
+<!-- SCRIPT -->
+<script>
+function mostrar(numero){
+
+    let bloques = document.querySelectorAll(".bloque");
+
+    bloques.forEach(b => b.classList.remove("activo"));
+
+    document.getElementById("b"+numero).classList.add("activo");
+
+    window.scrollTo({
+        top: document.querySelector(".contenido").offsetTop - 80,
+        behavior: "smooth"
+    });
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+
+    const params = new URLSearchParams(window.location.search);
+    const seccion = params.get("seccion");
+
+    if(seccion){
+        mostrar(seccion);
+    }
+
+});
+</script>
+
+<script>anteriorFondo()</script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

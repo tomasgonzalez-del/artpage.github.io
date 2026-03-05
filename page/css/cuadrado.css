@@ -1,0 +1,144 @@
+
+.recorte{
+    width:100%; 
+    height:100px;
+    background-color: rgb(250, 233, 215);
+    display:flex; 
+    align-items:center;
+    position:relative;
+    z-index:3;
+}
+.recorteDown{
+width:100%; height:100px; background-color:rgba(57,59,38,0.23); display:flex;
+ align-items:center; justify-content:flex-end; padding-right:20px;
+}
+.fotoPresentacion{
+/*background-image:url('../object/image/mountain2.jpg');*/ 
+width:100%;
+ height:700px;
+  background-size:cover; 
+display:flex; align-items:center; 
+justify-content:center; 
+flex-direction:column;
+
+}#caja{
+    margin-top: -30%;
+     position: relative;     /* importante */
+    width: 100%;
+    height: 85vh;
+    
+}.flechas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* separa izquierda y derecha */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 40px;
+}
+.OptionBox{
+ width:100%; 
+ margin-top: 0;
+ height:100px; 
+ background-color:rgba(148,132,121,0.283);
+  display:flex;
+align-items:center;
+justify-content:center;
+border-radius: 5%;
+}
+/* botones */
+.boton{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.347);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.botonEleccion{
+    margin-left: 500px;
+    padding: 12px 25px;
+    margin: 10px;
+
+    border-radius: 10px;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.133);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    background: #ffe7b2;
+}
+
+/* caja contenido */
+.contenido{
+    margin-top: 40px;
+    min-height: 250px;
+}
+
+/* bloques ocultos */
+.bloque{
+    display: none;
+}
+
+/* bloque visible */
+.activo{
+    display: block;
+}
+
+/* imagen */
+img{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+    .seccionSobreMi{
+
+
+    background: rgb(255, 244, 214);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.seccionSobreMi h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.seccionSobreMi p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* arriba */
+#arriba{
+    background: rgba(255, 244, 214, 0);
+}
+
+/* abajo */
+#abajo{
+    background: rgba(0, 0, 253, 0);
+}
+
+.seccion{
+    height: 10px; /* ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efecto Máquina de Escribir</title>
+
+<style>
+    body{
+        background-color: #111;
+        color: #ffffff;
+        font-family: monospace;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+    }
+
+    #texto{
+        width: 70%;
+        font-size: 22px;
+        line-height: 1.6;
+        border-right: 3px solid white; /* cursor */
+        padding-right:5px;
+        white-space: pre-wrap;
+        overflow:hidden;
+        animation: parpadeo 0.7s infinite;
+    }
+
+    @keyframes parpadeo{
+        0% { border-color: white; }
+        50% { border-color: transparent; }
+        100% { border-color: white; }
+    }
+</style>
+</head>
+
+<body>
+
+<div id="texto"></div>
+
+<script>
+
+const textoCompleto = `Bienvenido a mi página.
+
+Este es un ejemplo de animación tipo máquina de escribir.
+El texto aparece letra por letra cuando ingresás a la página,
+creando un efecto visual dinámico y elegante.
+
+Podés usar esto para una presentación,
+una historia,
+una descripción de producto
+o lo que vos quieras.`;
+
+let i = 0;
+let velocidad = 40; // menor número = más rápido
+
+function escribir(){
+    if(i < textoCompleto.length){
+        document.getElementById("texto").innerHTML += textoCompleto.charAt(i);
+        i++;
+        setTimeout(escribir, velocidad);
+    }
+}
+
+window.onload = escribir;
+
+</script>
+
+</body>
+</html>
